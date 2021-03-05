@@ -1,0 +1,61 @@
+footer {
+  width: 100%;
+  height: 342px;
+  position: relative;
+  .line {
+    display: inline-block;
+    content: "";
+    width: 83%;
+    height: 171px;
+    border-bottom: solid 1px #70707036;
+    margin-left: 8.5%;
+    margin-bottom: 83px;
+    @include tab {
+      width: 90%;
+      height: 80px;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    color: #7070704D;
+    letter-spacing: 3.2px;
+    width: 83%;
+    margin: 0 auto;
+    position: relative;
+    &:after {
+      content: '\f099' ' ' '\f082';
+      font-family: 'Font Awesome 5 Brands';
+	    font-weight: 900;
+      font-size: 19px;
+      color: black;
+      height: 32px;
+      margin-left: 26px;
+      position: absolute;
+      top: 50%;
+      margin-top: -11px;
+      @include tab {
+        right: -50px;
+      }
+    }
+    @include tab {
+      margin: 100px 0 5% 6%;
+    }
+  }
+  button {
+    position: absolute;
+    right: 113px;
+    bottom: 60px;
+    font-size: 18px;
+    color: #707070;
+    background-color: #fff;
+    line-height: 18px;
+    letter-spacing: 1.8px;
+    border: solid 1px #707070;
+    padding: 10px 40px;
+    @include tab {
+      height: 38px;
+      top: 50%;
+      right: 38%;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// html {
+//   font-size: 62.5%;
+// }
+
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+body {
+  font-family: "Roboto Mono", "Arial", "游ゴシック", "Helvetica Neue", "Hiragino Sans", sans-serif;
+}
+  .title {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 5.4px;
+    color: #707070;
+    font-family: "Roboto";
+    padding: 261px 0px 11px 107px;
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      content: "";
+      width: 95px;
+      margin-left: 8.5px;
+      border-bottom: 1px solid #707070;
+    }
+  }

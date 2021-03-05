@@ -1,0 +1,53 @@
+.first-view {
+  height: 800px;
+  width: 100%;
+  background-image: url(../img/chach.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include tab {
+    background-size: cover;
+    background-position: left;
+  }
+  .catchcopy { 
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .catch1 {
+      height: 150px;
+      width: 100%;
+      font-family: "ヒラギノ明朝 Pro", "游明朝", "游明朝体", "Times New Roman", serif ;
+      font-size: 38px;
+      text-align: center;
+      margin-top: 20%;
+    }
+    .catch2 {
+      height: 150px;
+      width: 100%;
+      font-family: "Zapfino", "Segoe Script",  "cursive", "Comic Sans MS";
+      font-size: 38px;
+      text-align: left;
+    }
+    @include tab {
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      .catch1 {
+        order: 2; //上下逆転
+        height: 200px;
+      }
+      .catch2 {
+        order: 1; //上下逆転
+        height: 80px;
+      }
+    }
+  }
+}
+//bgi

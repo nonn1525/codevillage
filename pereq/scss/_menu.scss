@@ -1,0 +1,64 @@
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 107px 13px 107px;
+  @include tab {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  .menu-item {
+    @include tab {
+      margin:0 auto;
+    }
+    .menu_img {
+      width: 21%;
+      margin-bottom: 35px;
+      .pc {
+        display: inline-block !important;
+      }
+      .sp {
+        display: none !important;
+        width: 100%;
+      }
+      @include tab {
+        .pc {
+          display: none !important;
+        }
+        .sp {
+          display: block !important;
+        }
+        width: 100%;
+      }
+    }
+    .menu_title {
+      font-size: 30px;
+      color: #000000;
+      line-height: 36px;
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .menu_text {
+      width: 253px;
+      font-size: 16px;
+      color: #000000;
+      line-height: 19px;
+      letter-spacing: 1.6px;
+      text-align: left;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+    .menu_price {
+      font-size: 16px;
+      color: #000000;
+      line-height: 19px;
+      letter-spacing: 1.6px;
+      text-align: end;
+      margin-bottom: 70px;
+      @include tab {
+        
+      }
+    }
+  }
+}
