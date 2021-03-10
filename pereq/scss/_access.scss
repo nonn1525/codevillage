@@ -1,0 +1,57 @@
+.access-inner {
+  height: 757px;
+  background-color: #A193861F;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  @include tab {
+    height: 900px;
+    flex-direction: column;
+  }
+  .ba {
+    background-color: #D0C5BA;
+    width: 40%;
+    height: 52%;
+    padding: 7%;
+    padding-right: 10%;
+    position: absolute;
+    top: 297px;
+    @include tab {
+      width: 100%;
+      height: 282px;
+      margin-top: 230px;
+      padding: 30px;
+    }
+    h2 {
+      font-size: 2.4rem;
+      color: #00000038;
+      line-height: 2.9rem;
+      letter-spacing: 0.24rem;
+      margin-bottom: 30px;
+    }
+    li {
+      font-size: 1.6rem;
+      color: #FFFFFF;
+      line-height: 1.9rem;
+      letter-spacing: 0.16rem;
+      margin-bottom: 24px;
+      list-style: none;
+    }
+  }
+  .map {
+    width: 60%;
+    height: 282px;
+    margin-top: 300px;
+    @include tab {
+      width: 100%;
+      height: 231px;
+      margin-top: 130px;
+      position: absolute;
+      top: 0px;
+    }
+    .m-url {
+      width: 100%;
+      height: 396px;
+    }
+  }
+}
