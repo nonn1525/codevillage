@@ -42,7 +42,7 @@ body {
     }
   }
   .wrap {
-    @include sp {
+    @include tab {
       overflow: hidden;
     }
   }
