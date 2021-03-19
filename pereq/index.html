@@ -7,34 +7,48 @@
   <title>Salon Beppu</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+  
 </head>
 <body>
+  <div class="wrap">
   <header>
     <div class="menu">
       <h1 class="fv-h1">SALON BEPPU</h1>
-      <div class="ham">
-        <span></span>
-        <span></span>
-        <span class ="ham-3"></span>
-      </div>
-      <nav class="fv-nav">
-        <ul>
-          <li><span>MENU</span></li>
-          <li>CONCEPT</li>
-          <li>ACCESS</li>
-          <li>RESERVE</li>
-        </ul>
+      <nav class="pc-nav">
+          <ul>
+            <li><a href="#menu" class="js-smooth-scroll">MENU</a></span></li>
+            <li><a href="#concept" class="js-smooth-scroll">CONCEPT</a></li>
+            <li><a href="#access" class="js-smooth-scroll">ACCESS</a></li>
+            <li><a href="#reserve" class="js-smooth-scroll">RESERVE</a></li>
+          </ul>
       </nav>
+      <div class="toggle_btn" id="hamopen">
+        <span class="inner_line"></span>
+        <span class="inner_line"></span>
+        <span class="inner_line" id ="line3"></span>
+      </div>
     </div>
   </header>
   <main>
     <section class="first-view">
+      <div class="overlay">
+        <div id="closebtn">×</div>
+        <nav class="sp-nav">
+          <ul>
+            <li><a href="#menu" class="js-smooth-scroll">MENU</a></span></li>
+            <li><a href="#concept" class="js-smooth-scroll">CONCEPT</a></li>
+            <li><a href="#access" class="js-smooth-scroll">ACCESS</a></li>
+            <li><a href="#reserve" class="js-smooth-scroll">RESERVE</a></li>
+          </ul>
+        </nav>
+      </div>
+      
       <div class="catchcopy">
         <h2 class="catch1">髪は、大事です。</p>
-        <h2 class="catch2">We need Hair</p>
+        <h2 class="catch2">We need Hair.</p>
       </div>
     </section>
-    <section class="consept">
+    <section id="concept">
       <div class="inner con_inner">
         <h1 class="title">
           CONCEPT
@@ -51,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="menu">
+    <section id="menu">
       <div class="inner menu-inner">
         <h1 class="title">
           MENU
@@ -106,7 +120,7 @@
         </div>
       </div>
     </section>
-    <section class="access">
+    <section id="access">
       <div class="inner access-inner">
         <h1 class="title">ACCESS</h1>
         <div class="ba">
@@ -124,12 +138,15 @@
       </div>  
     </section>
   </main>
+
   <footer>
     <div class="line"></div>
     <div class="footer-text">
       <h1>SALON BEPPU</h1>
-      <button>RESERVE</button>
+      <button id="reserve">RESERVE</button>
     </div>
   </footer>
+  <script src="js/main.js"></script>
+
 </body>
 </html>

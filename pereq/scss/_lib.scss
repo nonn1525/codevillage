@@ -20,6 +20,7 @@ html {
 
 body {
   font-family: "Roboto Mono", "Arial", "游ゴシック", "Helvetica Neue", "Hiragino Sans", sans-serif;
+  width: 100%;
 }
   .title {
     font-size: 1.8rem;
@@ -38,5 +39,10 @@ body {
     }
     @include tab {
       padding: 60px 0px 60px 20px;
+    }
+  }
+  .wrap {
+    @include sp {
+      overflow: hidden;
     }
   }
